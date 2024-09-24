@@ -35,6 +35,14 @@ body {
     background: var(--color-bg);
 }
 
+nav{
+    background-color: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -96,11 +104,15 @@ img{
     width: 100%;
     display: block;
     object-fit: cover;
+    border-radius: 70%;
 }
 
 header {
     position: relative;
     top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
 }
 
 .head_container{
@@ -113,4 +125,82 @@ header {
 
 .head_left p {
     margin: 1rem 0 2.4rem;
+}
+
+.categories {
+    background: var(--color-bg1);
+    height: 29rem;
+}
+
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+
+.categories_left{
+    margin-right: 2rem;
+}
+
+.categories_left p{
+    margin: 1rem 0 3rem;
+}
+
+
+
+.categories_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.category:hover{
+    transform: scale(1.2);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+
+.category:nth-child(2) .category_icon{
+    background : var(--color-danger)
+}
+
+.category:nth-child(3) .category_icon{
+    background : var(--color-success)
+}
+
+.category:nth-child(4) .category_icon{
+    background : var(--color-warning)
+}
+
+.category:nth-child(5) .category_icon{
+    background : var(--color-success)
+}
+
+.category:nth-child(6) .category_icon{
+    background : var(--color-danger)
+}
+
+.category_icon {
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category p{
+    font-size: 0.85rem;
+}
+
+.category h5{
+    margin: 2rem 0 1rem;
 }
