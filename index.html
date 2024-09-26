@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+
+
 <html lang="en">
 
 <head>
@@ -11,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="main.js"></script>
+    <style>
+        body{
+            background-image: url(bg-texture.png);
+        }
+    </style>
 </head>
 
 <body>
@@ -29,8 +38,8 @@
             <button id="close-menu"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
+
     <header>
-        
         <div class="container head_container">
             <div class="head_left">
                 <h1>Grow your skills to advance your career path</h1>
@@ -40,12 +49,16 @@
             </div>
             <div class="head_right">
                 <div class="head_right-image">
-                    <img src="ol.jpg">
+                    <img src="ol.jpg" class="himg">
                 </div>
             </div>
         </div>
     </header>
+
     <section class="categories">
+        <br>
+        <br>
+        
         <div class="container categories_container">
             <div class="categories_left">
                 <h1>Categories</h1>
@@ -57,42 +70,214 @@
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-html5"></i></span>
                     <h5>Web Development</h5>
-                    <p>Lorem ipsum dolor sit amet  Voluptas, illo.</p>
+                    <p>Lorem ipsum dolor sit amet Voluptas, illo.</p>
                 </article>
 
                 <article class="category">
-                <span class="category_icon"><i class="uil uil-database"></i></span>
-                <h5>DSA</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
+                    <span class="category_icon"><i class="uil uil-database"></i></span>
+                    <h5>DSA</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
                 </article>
 
                 <article class="category">
-                <span class="category_icon"><i class="uil uil-shield"></i></span>
-                <h5>Cybersecurity</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
+                    <span class="category_icon"><i class="uil uil-shield"></i></span>
+                    <h5>Cybersecurity</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
                 </article>
 
                 <article class="category">
-                <span class="category_icon"><i class="uil uil-brain"></i></span>
-                <h5>Generative AI</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
+                    <span class="category_icon"><i class="uil uil-brain"></i></span>
+                    <h5>Generative AI</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
                 </article>
 
                 <article class="category">
-                <span class="category_icon"><i class="uil uil-graduation-cap"></i></span>
-                <h5>GATE</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
+                    <span class="category_icon"><i class="uil uil-graduation-cap"></i></span>
+                    <h5>GATE</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
                 </article>
 
                 <article class="category">
-                <span class="category_icon"><i class="uil uil-suitcase"></i></span>
-                <h5>Interview Preparation</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
+                    <span class="category_icon"><i class="uil uil-suitcase"></i></span>
+                    <h5>Interview Preparation</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, illo.</p>
                 </article>
             </div>
         </div>
     </section>
-    
+
+    <section class="courses">
+        <h2 class="courseh">Our Popular Courses</h2>
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src="https://www.thinknexttraining.com/images/data-structures-and-algorithms-min.jpg">
+                </div>
+                <div class="course_info">
+                    <h4>DSA With CPP</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ab nam autem voluptatum fugiat,
+                        eius sit.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="https://www.thinknexttraining.com/images/data-structures-and-algorithms-min.jpg">
+                </div>
+                <div class="course_info">
+                    <h4>DSA With CPP</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ab nam autem voluptatum fugiat,
+                        eius sit.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="https://www.thinknexttraining.com/images/data-structures-and-algorithms-min.jpg">
+                </div>
+                <div class="course_info">
+                    <h4>DSA With CPP</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ab nam autem voluptatum fugiat,
+                        eius sit.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="faqs">
+        <h2 class="courseh">Frequently Asked Questions</h2>
+        <div class="container faqs_container">
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum cum vel itaque, accusantium impedit veniam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum cum vel itaque, accusantium impedit veniam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum cum vel itaque, accusantium impedit veniam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum cum vel itaque, accusantium impedit veniam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum cum vel itaque, accusantium impedit veniam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I know the right course for me ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum cum vel itaque, accusantium impedit veniam.</p>
+                </div>
+            </article>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <section class="container testimonials_container">
+        <h2 class="courseh">Student's Testmonials</h2>
+        <div>
+            <article class="testimonial">
+                <div class="avatar">
+                    <img src="https://starsunfolded.com/wp-content/uploads/2023/11/Bhupendra-Jogi-.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Bhupendra Jogi</h5>
+                    <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident quia in, iusto ullam itaque fuga?</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial"></article>
+                <div class="avatar">
+                    <img src="https://starsunfolded.com/wp-content/uploads/2023/11/Bhupendra-Jogi-.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Bhupendra Jogi</h5>
+                    <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident quia in, iusto ullam itaque fuga?</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial"></article>
+                <div class="avatar">
+                    <img src="https://starsunfolded.com/wp-content/uploads/2023/11/Bhupendra-Jogi-.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Bhupendra Jogi</h5>
+                    <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident quia in, iusto ullam itaque fuga?</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial"></article>
+                <div class="avatar">
+                    <img src="https://starsunfolded.com/wp-content/uploads/2023/11/Bhupendra-Jogi-.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Bhupendra Jogi</h5>
+                    <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident quia in, iusto ullam itaque fuga?</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial"></article>
+                <div class="avatar">
+                    <img src="https://starsunfolded.com/wp-content/uploads/2023/11/Bhupendra-Jogi-.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Bhupendra Jogi</h5>
+                    <small>Student</small>
+                    </div>
+                    <div class="testimonial_body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident quia in, iusto ullam itaque fuga?</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 </body>
 
 </html>
