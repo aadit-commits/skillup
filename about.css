@@ -1,1 +1,202 @@
+body{
+    background-image: url(bg-texture.png);
+}
 
+nav{
+    background-color: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+a{
+    color: var(--color-white);
+}
+
+nav button{
+    display: none;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav_menu a:hover{
+    color: var(--color-bg2);
+}
+
+.about_achievements{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+.about_achievements{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.about_achievements-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+.achievements_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.achievement_cards{
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);  
+}
+.achievement_cards:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.achievement_icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+.achievement_card:nth-child(2)
+.achievement_icon{
+    background: var(--color-success);
+}
+.achievement_card:nth-child(3)
+.achievement_icon{
+    background: var(--color-primary);
+}
+.achievement_card p{
+    margin-top: 1rem;
+}
+
+
+.team{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 3rem;
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 3rem;
+}
+.team_member{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    overflow: hidden;
+}
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.team_member-image img{
+    filter:saturate(0);
+}
+.team_member:hover img{
+    filter: saturate(1);
+}
+.team_member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_member-info p{
+    color: var(--color-light);
+}
+.team_member-social {
+    display: flex;
+    gap: 25px; 
+    justify-content: center;
+  }
+  
+  .team_member-social a {
+    color: #310303; 
+    text-decoration: none; 
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+  }
+  
+  .team_member-social a:hover {
+    color: #0073b1; 
+  }
+  
+
+
+footer {
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+    }
+    
+    .footer_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+    }
+    
+    .footer_container > div h4{
+    margin-bottom: 1.2rem;
+    }
+    
+    .footer_1 p{
+    margin: 0 0 2rem;
+    }
+    
+    footer ul li {
+    margin-bottom: 0.7rem;
+    }
+    
+    footer ul li a:hover {
+    text-decoration: underline;
+    }
+    
+    .footer_socials{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    }
+    
+    .footer_copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+    }
